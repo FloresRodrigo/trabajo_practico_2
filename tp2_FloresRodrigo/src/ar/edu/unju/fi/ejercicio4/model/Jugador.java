@@ -98,4 +98,17 @@ public class Jugador {
 
 		return edad;
 	}
+	
+	@Override
+	public String toString() {
+		return "\n" + "-------------------------" + 
+				"\nNombre: " + this.getNombre() + 
+				"\n" + "Apellido: "+ this.getApellido() + 
+				"\n" + "Fecha de nacimiento: " + this.getFechaNac() + 
+				"\n" + "Nacionalidad: " + this.getNacionalidad() +
+				"\n" + "Estatura: " + this.getEstatura() + " metros" + 
+				"\n" + "Peso: " + this.getPeso() + " kg" +
+				"\n" + "Posicion: " + this.getPosicion() +
+				"\n-------------------------";
+	}
 }
