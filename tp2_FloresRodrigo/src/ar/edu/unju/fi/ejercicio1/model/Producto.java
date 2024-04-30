@@ -6,11 +6,11 @@ public class Producto {
 	private float precioUnitario;
 	private OrigenFabricacion origen;
 	private Categoria categoria;
-	
+
 	public enum OrigenFabricacion {
 		ARGENTINA, CHINA, BRASIL, URUGUAY;
 	}
-	
+
 	public enum Categoria {
 		TELEFONIA, INFORMATICA, ELECTROHOGAR, HERRAMIENTAS;
 	}
@@ -68,14 +68,13 @@ public class Producto {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "\n" + "-------------------------" +"\nCodigo: " + this.getCodigo() + "\n" +
-	           "Descripcion: " + this.getDescripcion() + "\n" +
-               "Precio unitario: " + this.getPrecioUnitario() + "\n" +
-               "Origen de fabricacion: " + this.getOrigen() + "\n" +
-               "Categoria: " + this.getCategoria() + "\n-------------------------";
+		return "\n" + "-------------------------" + "\nCodigo: " + this.getCodigo() + "\n" + "Descripcion: "
+				+ this.getDescripcion() + "\n" + "Precio unitario: " + this.getPrecioUnitario() + "\n"
+				+ "Origen de fabricacion: " + this.getOrigen() + "\n" + "Categoria: " + this.getCategoria()
+				+ "\n-------------------------";
 	}
-	
+
 }
